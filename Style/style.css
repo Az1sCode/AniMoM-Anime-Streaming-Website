@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+}
+
+body {
+    background-color: #180630;
+}
+
+
+header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3vh 10vh 1vh 10vh;
+
+    background-image: linear-gradient(#FEFE, #EBEAEC);
+}
+
+header img {
+    height: 25px;
+
+    /* border: 1px solid black; */
+}
+
+.btn-burger {
+    border: none;
+    background: none;
+}
+
+.arrow-icon {
+    max-height: 14px;
+    margin-right: 0.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    max-height: 22px;
+}
+
+.landing-page {
+    margin: 10vh 10vh;
+
+    height: 500px;
+    background: radial-gradient(closest-side at 50% 65%,rgba(194,130,244,0.3),rgba(194,130,2440,0.0));
+}
+
+.episode-info {
+    position: absolute;
+    top: 360px;
+}
+
+.manga-info {
+    position: absolute;
+    top: 278px;
+    right: 70px;
+}
+
+.banner {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 7vh;
+}
+
+.banner-area {
+    height: 356px;
+}
+
+.banner-img {
+    height: 356px;
+    
+    background-image: url('../Asset/frieren-banner.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.circle-page {
+    margin-top: 1rem;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 6px;
+    height: 6px;
+    background: #B6B6B6;
+    border-radius: 50%;
+}
+
+
+.text-warning {
+    width: fit-content;
+    background: url('../Asset/flare.png');
+    background-blend-mode: screen;
+    background-position-x: -65px;
+    background-position-y: -15px;
+    background-color: #F99B2E;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    transform: skewX(-10deg);
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+.episode-info h1 {
+    width: 394px;
+
+    font-weight: 700;
+    font-size: 64px;
+    font-style: italic;
+    line-height: 5rem;
+
+    color: white;
+
+    margin-top: 0.8rem;
+
+}
+
+.manga-info h2 {
+    width: 182px;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: right;
+
+    color: white;
+
+    position: relative;
+    bottom: 65px;
+    right: 80px;
+}
+
+.recomended-page {
+
+    margin: 25vh 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recomended-page h3 {
+    font-weight: 700;
+    font-size: 165px;
+
+    background: linear-gradient(rgba(146,83,249, 0.2), rgba(146,83,249,0.0) ,rgba(146,83,249,0.0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-recomended {
+    display: flex;
+
+    position: relative;
+
+    bottom: 100px;
+    
+    align-items: center;
+    gap: 2rem;
+}
+
+.anime-poster {
+    max-height: 226px;
+
+    border-radius: 4px;
+
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.merchandise-top {
+    margin: 20vh 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+.merchandise-top h3 {
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -2px;
+    text-align: center;
+
+    line-height: 50%;
+
+    margin-bottom: 2rem;
+}
+
+h3 span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.merchandise-list {
+    width: 100%;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: right;
+    background: linear-gradient(120deg,rgba(146,83,249, 0.0),rgba(128,67,227,0.2), rgba(103,45,199));
+    /* background-image: url('../Asset/bg\ garis.png'); */
+
+    box-sizing: border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(120deg, rgba(24,6,48),rgba(239,193,255));
+    border-image-slice: 1;
+    
+    gap: 1.5rem;
+}
+
+.merchandise-item {
+    max-width: 161px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    background-color: #27063C;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.merchandise-item:active {
+    background: white;
+}
+
+.merchandise-item img {
+    max-height: 145px;
+    margin-bottom: 1rem;
+}
+
+p[title|='item'] {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 20px;
+
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p[title='item-discount'] {
+    font-size: 0.7rem;
+    text-decoration: line-through;
+    font-weight: 600;
+    
+    color: #9D9D9D;
+    margin-bottom: 0;
+}
+
+p[title='item-price'] {
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: #FA6D1E;
+}
+
+.btn-cart {
+    border: none;
+    border-radius: 2px;
+
+    background: linear-gradient(#FA6D1E, #FA601E);
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cart-icon {
+    width: 20px;
+    height: 20px;
+
+    background: url('../Icon/cart\ icon.svg');
+}
+
+.lens-flare {
+    width: 300px;
+    height: 200px;
+
+    position: absolute;
+    transform: translate(80px, -182px);
+
+    background: url('../Asset/lens\ flare\ 2.png');
+    background-blend-mode: screen;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-character {
+    position: absolute;
+
+    width: 500px;
+    left: 90px;
+    transform: translateY(-190px);
+}
